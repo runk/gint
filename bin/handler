@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+
+const config = require('../lib/config');
+const runner = require('../lib/runner');
+const prepareHookParams = require('../lib/params');
+
+const debug = require('debug')('gint:handler');
+
+debug('Bootstrapping');
+
+const parsed = config(process.cwd());
+if (!parsed) {
+  console.error('Gint: cannot find config with rules. Create `.gintrc` file in your project root.');
+  process.exit(1);
+}
+
+const opts = {
+  hookName: process.argv[2],
+  hookParamsRaw: process.env.GIT_PARAMS,
+  cwd: process.cwd(),
+};
+// TODO: avoid monkeypatching
+opts.hookParams = prepareHookParams(opts);
+
+debug('Options: %O', opts);
+debug('Rules: %O', parsed);
+
+runner(parsed, opts);

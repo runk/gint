@@ -1,0 +1,55 @@
+{
+  "name": "gint",
+  "version": "0.1.0",
+  "description": "",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "jest",
+    "install": "node ./bin/install.js",
+    "uninstall": "node ./bin/uninstall.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/runk/gint.git"
+  },
+  "keywords": [
+    "git",
+    "hook",
+    "hooks",
+    "pre-commit",
+    "precommit",
+    "post-commit",
+    "postcommit",
+    "pre-push",
+    "prepush",
+    "post-merge",
+    "postmerge",
+    "test"
+  ],
+  "author": "Dmitry Shirokov <deadrunk@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/runk/gint/issues"
+  },
+  "homepage": "https://github.com/runk/gint",
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.6.1",
+    "tempy": "^0.1.0"
+  },
+  "dependencies": {
+    "is-ci": "^1.0.10",
+    "lodash": "^4.17.4",
+    "normalize-path": "^1.0.0",
+    "strip-indent": "^2.0.0",
+    "strip-json-comments": "^2.0.1"
+  },
+  "standard": {
+    "env": {
+      "jest": true
+    }
+  }
+}
