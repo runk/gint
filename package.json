@@ -1,13 +1,14 @@
 {
   "name": "gint",
-  "version": "0.2.0",
-  "description": "",
+  "version": "0.3.0",
+  "description": "A pluggable and configurable GIT linter tool",
   "engines": {
     "node": ">=4"
   },
   "scripts": {
-    "test": "jest",
     "install": "node ./bin/install.js",
+    "lint": "scripts/lint",
+    "test": "scripts/test",
     "uninstall": "node ./bin/uninstall.js"
   },
   "repository": {
@@ -35,6 +36,9 @@
   },
   "homepage": "https://github.com/runk/gint",
   "devDependencies": {
+    "eslint": "^4.5.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-markdown": "^1.0.0-beta.6",
     "jest": "^20.0.4",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.6.1",

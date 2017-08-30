@@ -6,7 +6,7 @@ Gint can help with enforcing commit message patterns, branch sizes and heaps mor
 
 ## Install
 
-```sh
+```shell
 npm install gint --save-dev
 # or 
 yarn add gint --dev
@@ -16,7 +16,7 @@ _Existing hooks aren't replaced_
 
 ## Uninstall
 
-```sh
+```shell
 npm uninstall gint
 # or
 yarn remove gint
