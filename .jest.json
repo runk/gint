@@ -1,0 +1,22 @@
+{
+  "collectCoverageFrom": [
+    "**/*.{js}"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 100,
+      "functions": 100,
+      "lines": 100,
+      "statements": 100
+    }
+  },
+  "roots": [
+    "<rootDir>/lib"
+  ],
+  "rootDir" : ".",
+  "testPathIgnorePatterns": [
+    "<rootDir>/(node_modules)/"
+  ],
+  "testRegex": "(\\.(test))\\.(js)$",
+  "testEnvironment": "node"
+}

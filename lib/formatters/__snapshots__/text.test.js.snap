@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib/formatters/text should work for multiply errors/warnings 1`] = `
+"Gint found some issues:
+  [[31merror[39m]	[90mfoo[39m	Burito
+  [[31merror[39m]	[90mfoz[39m	Taco
+  [[33mwarning[39m]	[90mbar[39m	Nachos
+  [[33mwarning[39m]	[90mbaz[39m	Quesadilla
+
+[31m[1m ✖ 4 problems (2 errors, 2 warnings)[22m[39m
+"
+`;
+
+exports[`lib/formatters/text should work for very basic case 1`] = `
+"Gint found some issues:
+  [[31merror[39m]	[90mfoo[39m	First
+  [[33mwarning[39m]	[90mbar[39m	Second
+
+[31m[1m ✖ 2 problems (1 error, 1 warning)[22m[39m
+"
+`;
+
+exports[`lib/formatters/text should work when no errors 1`] = `""`;

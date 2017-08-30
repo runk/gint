@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for lib/setup/utils/hook-script.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">lib/setup/utils</a> hook-script.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/39</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/38</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+&nbsp;
+const fs = <span class="cstat-no" title="statement not covered" >require('fs');</span>
+const path = <span class="cstat-no" title="statement not covered" >require('path');</span>
+const debug = <span class="cstat-no" title="statement not covered" >require('debug')('gint:hook-script');</span>
+&nbsp;
+const shebang = <span class="cstat-no" title="statement not covered" >'#!/bin/sh';</span>
+&nbsp;
+&nbsp;
+const write = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(f</span>ilename, data) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  fs.writeFileSync(filename, data);</span>
+<span class="cstat-no" title="statement not covered" >  fs.chmodSync(filename, parseInt('0755', 8));</span>
+};
+&nbsp;
+const read = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(f</span>ilename) =<span class="cstat-no" title="statement not covered" >&gt; fs.readFileSync(filename, 'utf-8'</span></span>);
+&nbsp;
+const makeSnippet = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(g</span>intDir, hookName) =&gt;</span>
+<span class="cstat-no" title="statement not covered" >  `GIT_PARAMS="$*" ${path.join(gintDir, 'bin/bootstrap')} ${hookName}</span>`;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >exports.sync = <span class="fstat-no" title="function not covered" >(g</span>intDir, hooksDir, hookName) =&gt; {</span>
+  const hookPath = <span class="cstat-no" title="statement not covered" >path.join(hooksDir, hookName);</span>
+  const snippet = <span class="cstat-no" title="statement not covered" >makeSnippet(gintDir, hookName);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  debug('Syncing %s hook', hookName);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (!fs.existsSync(hookPath)) {</span>
+<span class="cstat-no" title="statement not covered" >    debug('Not found, creating dummy file with shebang');</span>
+<span class="cstat-no" title="statement not covered" >    write(hookPath, shebang);</span>
+  }
+&nbsp;
+  const hookScript = <span class="cstat-no" title="statement not covered" >read(hookPath);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (hookScript.indexOf('#gint 0.') !== -1) {</span>
+<span class="cstat-no" title="statement not covered" >    debug('Old version of gint script found, migrating');</span>
+<span class="cstat-no" title="statement not covered" >    write(hookPath, `${shebang}\n\n${snippet}\n`);</span>
+&nbsp;
+  } else <span class="cstat-no" title="statement not covered" >if (hookScript.indexOf(snippet) === -1) {</span>
+<span class="cstat-no" title="statement not covered" >    debug('Bootstrap line isnt found, amending hook script');</span>
+<span class="cstat-no" title="statement not covered" >    write(hookPath, `${hookScript}\n\n${snippet}\n`);</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  debug('Bootstrap line found, all good');</span>
+};
+&nbsp;
+<span class="cstat-no" title="statement not covered" >exports.unsync = <span class="fstat-no" title="function not covered" >(g</span>intDir, hooksDir, hookName) =&gt; {</span>
+  const hookPath = <span class="cstat-no" title="statement not covered" >path.join(hooksDir, hookName);</span>
+  const snippet = <span class="cstat-no" title="statement not covered" >makeSnippet(gintDir, hookName);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  debug('Unsyncing %s hook', hookName, hookPath);</span>
+<span class="cstat-no" title="statement not covered" >  if (!fs.existsSync(hookPath)) {</span>
+<span class="cstat-no" title="statement not covered" >    debug('Not found, nothing more to do');</span>
+<span class="cstat-no" title="statement not covered" >    return;</span>
+  }
+&nbsp;
+  let hookScript = <span class="cstat-no" title="statement not covered" >read(hookPath);</span>
+<span class="cstat-no" title="statement not covered" >  hookScript = hookScript.replace(`${snippet}`, '').trim() + '\n';</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  debug('Sanitizing script');</span>
+<span class="cstat-no" title="statement not covered" >  if (hookScript.trim() === shebang) {</span>
+<span class="cstat-no" title="statement not covered" >    fs.unlinkSync(hookPath);</span>
+  } else {
+<span class="cstat-no" title="statement not covered" >    write(hookPath, hookScript);</span>
+  }
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Aug 30 2017 18:10:05 GMT+1000 (AEST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>
