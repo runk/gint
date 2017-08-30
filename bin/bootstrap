@@ -1,0 +1,44 @@
+#!/bin/sh
+
+HOOK_NAME=$1
+
+command_exists () {
+  command -v "$1" >/dev/null 2>&1
+}
+
+load_nvm () {
+  # If nvm is not loaded, load it
+  command_exists nvm || {
+    export NVM_DIR="$1"
+    [ -s "$1/nvm.sh" ] && source "$1/nvm.sh"
+  }
+
+  # TODO: decide what to do
+  # If nvm has been loaded correctly, use project .nvmrc
+  # command_exists nvm && [ -f .nvmrc ] && nvm use
+}
+
+cd "."
+
+# Add common path where Node can be found
+# Brew standard installation path /usr/local/bin
+# Node standard installation path /usr/local
+export PATH="$PATH:/usr/local/bin:/usr/local"
+
+# nvm path with standard installation
+load_nvm ~/.nvm
+
+# nvm path installed with Brew
+load_nvm /usr/local/opt/nvm
+
+# Check that node exists
+command_exists node || {
+  echo >&2 "gint > can't find node in PATH, skipping '$HOOK_NAME' hook execution"
+  exit 0
+}
+
+# Export Git hook params
+export GIT_PARAMS="$*"
+
+/Users/m48692/projects/ahm-constants/node_modules/gint/bin/handler "$HOOK_NAME"
+node_modules/gint/bin/handler "$HOOK_NAME"
