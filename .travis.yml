@@ -6,6 +6,6 @@ node_js:
   - "stable"
   - "7.6"
 script:
+  - npm run lint
   - npm test
   - GINT_IGNORE_CI=true node bin/install
-  - bash -n .git/hooks/pre-commit
