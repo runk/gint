@@ -41,3 +41,4 @@ command_exists node || {
 export GIT_PARAMS="$*"
 
 /Users/m48692/projects/ahm-constants/node_modules/gint/bin/handler "$HOOK_NAME"
+node_modules/gint/bin/handler "$HOOK_NAME"
