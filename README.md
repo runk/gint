@@ -1,4 +1,4 @@
-# gint [![](http://img.shields.io/npm/dm/gint.svg?style=flat)](https://www.npmjs.org/package/gint) [![npm version](https://badge.fury.io/js/gint.svg)](https://www.npmjs.com/package/gint) [![Mac/Linux Build Status](https://img.shields.io/travis/typicode/gint/master.svg?label=Mac%20OSX%20%26%20Linux)](https://travis-ci.org/typicode/gint) [![Windows Build status](https://img.shields.io/appveyor/ci/typicode/gint/master.svg?label=Windows)](https://ci.appveyor.com/project/typicode/gint/branch/master)
+# gint [![](http://img.shields.io/npm/dm/gint.svg?style=flat)](https://www.npmjs.org/package/gint) [![npm version](https://badge.fury.io/js/gint.svg)](https://www.npmjs.org/package/gint) [![Build Status](https://img.shields.io/travis/runk/gint/master.svg)](https://travis-ci.org/runk/gint)
 
 > A pluggable and configurable GIT linter tool
 
