@@ -50,10 +50,5 @@
     "normalize-path": "^1.0.0",
     "strip-indent": "^2.0.0",
     "strip-json-comments": "^2.0.1"
-  },
-  "standard": {
-    "env": {
-      "jest": true
-    }
   }
 }
