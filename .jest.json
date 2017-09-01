@@ -15,7 +15,7 @@
   ],
   "rootDir" : ".",
   "testPathIgnorePatterns": [
-    "<rootDir>/(node_modules)/"
+    "<rootDir>/(node_modules|test)/"
   ],
   "testRegex": "(\\.(test))\\.(js)$",
   "testEnvironment": "node"

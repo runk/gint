@@ -3,6 +3,8 @@
 if [ -n "$npm_config_coverage" ]; then COVERAGE="--coverage"; else COVERAGE=""; fi
 if [ -n "$npm_config_nowatch" ]; then WATCH=""; else WATCH="--watch"; fi;
 
+rm -rf ./coverage
+
 jest \
   --config=.jest.json \
   $WATCH \
