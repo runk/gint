@@ -1,8 +1,6 @@
+'use strict';
+
 const fs = require('fs');
-const path = require('path');
-const mkdirp = require('mkdirp');
-const rimraf = require('rimraf');
-const tempy = require('tempy');
 
 exports.write = (filePath, data) => fs.writeFileSync(filePath, data);
 
