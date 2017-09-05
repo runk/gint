@@ -1,6 +1,7 @@
 {
+  "collectCoverage": true,
   "collectCoverageFrom": [
-    "**/*.{js}"
+    "lib/**/*.{js,jsx}"
   ],
   "coverageThreshold": {
     "global": {
@@ -10,13 +11,9 @@
       "statements": 100
     }
   },
-  "roots": [
-    "<rootDir>/lib"
-  ],
-  "rootDir" : ".",
   "testPathIgnorePatterns": [
-    "<rootDir>/(node_modules|test)/"
+    "node_modules",
+    "__tests__/helpers.js"
   ],
-  "testRegex": "(\\.(test))\\.(js)$",
   "testEnvironment": "node"
 }
