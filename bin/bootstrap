@@ -1,6 +1,6 @@
 #!/bin/sh
 
-HOOK_NAME=$1
+# HOOK_NAME=$1
 
 command_exists () {
   command -v "$1" >/dev/null 2>&1
@@ -36,8 +36,5 @@ command_exists node || {
   echo >&2 "gint > can't find node in PATH, skipping '$HOOK_NAME' hook execution"
   exit 0
 }
-
-# Export Git hook params
-export GIT_PARAMS="$*"
 
 node_modules/gint/bin/handler "$HOOK_NAME"

@@ -15,14 +15,16 @@ if (!parsed) {
 }
 
 const opts = {
-  hookName: process.argv[2],
-  hookParamsRaw: process.env.GIT_PARAMS,
+  hookName: process.env.HOOK_NAME,
+  hookParamsRaw: process.env.HOOK_PARAMS,
   cwd: process.cwd(),
 };
+debug('env %O', process.env)
+debug('Options: %O', opts);
 // TODO: avoid monkeypatching
 opts.hookParams = prepareHookParams(opts);
 
-debug('Options: %O', opts);
+debug('Options2: %O', opts);
 debug('Rules: %O', parsed);
 
 runner(parsed, opts);
