@@ -26,4 +26,13 @@ opts.hookParams = prepareHookParams(opts);
 debug('Options2: %O', opts);
 debug('Rules: %O', parsed);
 
-runner(parsed, opts, { err: process.stderr, out: process.stdout });
+
+runner(parsed, opts)
+  .then((output) => {
+    process.stdout.write(output);
+    process.exit()
+  })
+  .catch((output) => {
+    process.stderr.write(output);
+    process.exit(1);
+  });
