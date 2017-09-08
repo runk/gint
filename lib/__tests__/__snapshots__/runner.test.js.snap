@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib/runner non-strict config should return correct output - errors 1`] = `
+"Gint found some issues:
+  [[33mwarning[39m]	[90mcommit-min-len[39m	Commit message is too short, min length: 10 chars
+  [[33mwarning[39m]	[90mcommit-message-pattern[39m	Commit message does not match pattern \\"^\\\\[(patch|minor|major)\\\\]\\\\s.{3,}\\"
+
+[31m[1m ✖ 2 problems (0 errors, 2 warnings)[22m[39m
+"
+`;
+
+exports[`lib/runner strict config should return correct output - errors 1`] = `
+"Gint found some issues:
+  [[31merror[39m]	[90mcommit-min-len[39m	Commit message is too short, min length: 10 chars
+
+[31m[1m ✖ 1 problem (1 error, 0 warnings)[22m[39m
+"
+`;

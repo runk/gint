@@ -7,5 +7,4 @@ node_js:
   - "7.6"
 script:
   - npm run lint
-  - npm test
-  - GINT_IGNORE_CI=true node bin/install
+  - npm t --coverage --nowatch

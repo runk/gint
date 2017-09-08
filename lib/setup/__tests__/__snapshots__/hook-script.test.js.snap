@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib/setup/hook-script sync should amend hook script if it did exist beforehand 1`] = `
+"#/bin/bash -e
+echo \\"yey!\\";
+
+
+HOOK_PARAMS=\\"$*\\" HOOK_NAME=\\"commit-msg\\" node_modules/gint/bin/bootstrap
+"
+`;
+
+exports[`lib/setup/hook-script sync should create hook script if it did not exist beforehand 1`] = `
+"#!/bin/sh
+
+HOOK_PARAMS=\\"$*\\" HOOK_NAME=\\"commit-msg\\" node_modules/gint/bin/bootstrap
+"
+`;
+
+exports[`lib/setup/hook-script sync should keep only one instance of snippet in hook file 1`] = `
+"#!/bin/sh
+
+HOOK_PARAMS=\\"$*\\" HOOK_NAME=\\"commit-msg\\" node_modules/gint/bin/bootstrap
+"
+`;
+
+exports[`lib/setup/hook-script sync should replace old hook format with new one 1`] = `
+"#!/bin/sh
+
+HOOK_PARAMS=\\"$*\\" HOOK_NAME=\\"commit-msg\\" node_modules/gint/bin/bootstrap
+"
+`;
+
+exports[`lib/setup/hook-script unsync should remove hook snippet is hook script shared/edited 1`] = `
+"#/bin/bash -e
+echo \\"yey!\\";
+"
+`;

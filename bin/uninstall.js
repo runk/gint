@@ -2,7 +2,7 @@
 
 // Run when package is uninstalled
 const path = require('path');
-const uninstallFrom = require('../lib/setup/uninstall');
+const uninstall = require('../lib/setup/uninstall');
 
 const gintDir = path.join(__dirname, '..');
-uninstallFrom(gintDir);
+uninstall(gintDir, console.log);

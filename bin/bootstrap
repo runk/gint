@@ -1,6 +1,6 @@
 #!/bin/sh
 
-HOOK_NAME=$1
+# HOOK_NAME=$1
 
 command_exists () {
   command -v "$1" >/dev/null 2>&1
@@ -37,8 +37,4 @@ command_exists node || {
   exit 0
 }
 
-# Export Git hook params
-export GIT_PARAMS="$*"
-
-/Users/m48692/projects/ahm-constants/node_modules/gint/bin/handler "$HOOK_NAME"
 node_modules/gint/bin/handler "$HOOK_NAME"

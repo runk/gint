@@ -15,14 +15,24 @@ if (!parsed) {
 }
 
 const opts = {
-  hookName: process.argv[2],
-  hookParamsRaw: process.env.GIT_PARAMS,
+  hookName: process.env.HOOK_NAME,
+  hookParamsRaw: process.env.HOOK_PARAMS,
   cwd: process.cwd(),
 };
+debug('Options: %O', opts);
 // TODO: avoid monkeypatching
 opts.hookParams = prepareHookParams(opts);
 
-debug('Options: %O', opts);
+debug('Options2: %O', opts);
 debug('Rules: %O', parsed);
 
-runner(parsed, opts);
+
+runner(parsed, opts)
+  .then((output) => {
+    process.stdout.write(output);
+    process.exit()
+  })
+  .catch((output) => {
+    process.stderr.write(output);
+    process.exit(1);
+  });
