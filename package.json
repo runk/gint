@@ -1,6 +1,6 @@
 {
   "name": "gint",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A pluggable and configurable GIT linter tool",
   "engines": {
     "node": ">=4"
@@ -8,6 +8,7 @@
   "scripts": {
     "install": "node ./bin/install.js",
     "lint": "scripts/lint",
+    "release": "scripts/release",
     "test": "scripts/test",
     "uninstall": "node ./bin/uninstall.js"
   },
@@ -39,6 +40,7 @@
     "eslint": "^4.5.0",
     "eslint-plugin-json": "^1.2.0",
     "eslint-plugin-markdown": "^1.0.0-beta.6",
+    "github-publish-release": "^4.0.0",
     "jest": "^20.0.4",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.6.1",
