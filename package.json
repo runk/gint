@@ -8,6 +8,7 @@
   "scripts": {
     "install": "node ./bin/install.js",
     "lint": "scripts/lint",
+    "release": "scripts/release",
     "test": "scripts/test",
     "uninstall": "node ./bin/uninstall.js"
   },
