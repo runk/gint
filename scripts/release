@@ -9,5 +9,6 @@ elif [ -n "$npm_config_patch" ]; then SEMVER="patch"
 else SEMVER="minor"; fi
 
 npm version $SEMVER
+npm publish
 github-publish-release
 git push --follow-tags
