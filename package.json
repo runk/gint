@@ -1,6 +1,6 @@
 {
   "name": "gint",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "A pluggable and configurable GIT linter tool",
   "engines": {
     "node": ">=4"
