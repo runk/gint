@@ -10,8 +10,8 @@ debug('Bootstrapping');
 
 const parsed = config(process.cwd());
 if (!parsed) {
-  console.error('Gint: cannot find config with rules. Create `.gintrc` file in your project root.');
-  process.exit(1);
+  console.error('Gint: Cannot find config with rules. Create `.gintrc` file in your project root.');
+  process.exit(0);
 }
 
 const opts = {
