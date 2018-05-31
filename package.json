@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "colors": "^1.1.2",
+    "debug": "^3.1.0",
     "is-ci": "^1.0.10",
     "lodash": "^4.17.4",
     "normalize-path": "^1.0.0",
