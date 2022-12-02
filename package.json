@@ -48,12 +48,10 @@
     "tempy": "^0.1.0"
   },
   "dependencies": {
-    "colors": "^1.1.2",
-    "debug": "^3.1.0",
-    "is-ci": "^1.0.10",
-    "lodash": "^4.17.4",
-    "normalize-path": "^1.0.0",
-    "strip-indent": "^2.0.0",
-    "strip-json-comments": "^2.0.1"
+    "colors": "^1.4.0",
+    "debug": "^4.3.4",
+    "is-ci": "^3.0.1",
+    "lodash": "^4.17.21",
+    "strip-json-comments": "^3.1.1"
   }
 }
