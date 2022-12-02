@@ -1,6 +1,6 @@
 {
   "name": "gint",
-  "version": "0.9.2",
+  "version": "0.0.0-development",
   "description": "A pluggable and configurable GIT linter tool",
   "engines": {
     "node": ">=4"
@@ -10,11 +10,12 @@
     "lint": "scripts/lint",
     "release": "scripts/release",
     "test": "scripts/test",
-    "uninstall": "node ./bin/uninstall.js"
+    "uninstall": "node ./bin/uninstall.js",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/runk/gint.git"
+    "url": "https://github.com/runk/gint.git"
   },
   "keywords": [
     "git",
