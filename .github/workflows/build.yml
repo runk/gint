@@ -4,7 +4,7 @@ on:
   push:
     branches: [master]
   pull_request:
-    branches: ['*']
+    branches: ["*"]
 
 jobs:
   build:
@@ -24,4 +24,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm i
       - run: npm run lint
-      - run: npm t --coverage --nowatch
+      - name: Tests
+        env:
+          FORCE_COLOR: 1
+        run: npm t --coverage --nowatch
