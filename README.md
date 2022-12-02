@@ -1,6 +1,6 @@
-# gint [![](http://img.shields.io/npm/dm/gint.svg?style=flat)](https://www.npmjs.org/package/gint) [![npm version](https://badge.fury.io/js/gint.svg)](https://www.npmjs.org/package/gint) [![Build Status](https://img.shields.io/travis/runk/gint/master.svg)](https://travis-ci.org/runk/gint)
+# gint [![](http://img.shields.io/npm/dm/gint.svg?style=flat)](https://www.npmjs.org/package/gint)
 
-> A pluggable and configurable GIT linter tool
+> A pluggable and configurable git linter tool
 
 Gint can help with enforcing commit message patterns, branch sizes and heaps more.
 

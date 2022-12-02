@@ -1,9 +1,0 @@
-os:
-  - linux
-language: node_js
-node_js:
-  - "stable"
-  - "7.6"
-script:
-  - npm run lint
-  - npm t --coverage --nowatch
